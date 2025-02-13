@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .header{
+            display: flex;
+            background-color: white;
+            padding: 10px;
+            width: 100%;
+            height: fit-content;
+            justify-content: space-evenly;
+            align-items: center;
+            img{
+                width: 170px;
+                height: 190px;
+                border-radius: 50px;
+                box-shadow: 0 5px 5px gray;
+            }
+            
+            h1{
+                font-size: xx-large;
+                font-weight: bolder;
+                color: black;
+            }
+        }
+        .links{
+            width: 100%;
+            height: auto;
+            background-color: rgb(10, 10, 58);
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            list-style-type: none;
+            padding: 10px;
+        }
+        li a{
+            float: left;
+            padding: 10px 17px;
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+        li a:hover{
+            background-color: white;
+            color: rgb(10, 10, 58);
+            border-radius: 40px;
+            box-shadow: 0 5px gray;
+            transition: all 0.3s ease;
+        }
+        li a:active{
+            transform: translateY(5px);
+            transition: all 0.2s ease;
+        }
+        .house{
+            width: 100%;
+            height: auto;
+            background-color: ghostwhite;
+            display: flex;
+            margin-top: 2px;
+            padding: 5px;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            form{
+                background-color: rgb(10, 10, 58);
+                padding: 40px 90px;
+                gap: 30px;
+                margin-top: 5px;
+                font-weight: bolder;
+                color: white;
+            }
+             
+            input[type = "text"]{
+                padding: 5px;
+                outline: none;
+            }
+            input[type = "text"]:focus{
+                outline: 1px solid coral;
+            }
+
+            input[type = "email"]{
+                padding: 05px;
+                outline: none;
+            }
+            input[type = "email"]:focus{
+                outline: 1px solid coral;
+            }
+             
+            textarea{
+                border-radius: 5px;
+            }
+            textarea:focus{
+                outline: 1px solid coral;
+                height: 70px;
+            }
+
+            input[type= "submit"]{
+                display: block;
+                margin: auto;
+                width: 140px;
+                height: 30px;
+                margin-top: 15px;
+                background-color: coral;
+                outline: none;
+                color: white;
+                font-weight: bolder;
+                border-radius: 10px;
+                font-size: medium;
+                box-shadow: 0 5px grey;
+                border: none;
+                cursor: pointer;
+            }
+            input[type= "submit"]:hover{
+                background-color: rgb(223, 93, 46);
+                width: 145px;
+                height: 35px;
+            }
+            input[type= "submit"]:active{
+                transform: translateY(5px);
+            }
+        }
+        table{
+            width: 900px;
+            height: 200px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        caption{
+            font-weight: bolder;
+            font-size: large;
+            margin-top: 10px;
+        }
+        td{
+            border: 1px solid rgb(10, 10, 58);
+            padding: 10px 50px;
+            text-align: left;
+            background-color: rgb(224, 231, 241);
+        }
+        th{
+            border: 1px solid white;
+            padding: 10px 50px;
+            text-align: left;
+            background-color: rgb(10, 10, 58);
+            color: white;
+        }
+        td:hover{
+            background-color: rgb(186, 213, 223);
+        }
+        .more{
+            width: 80%;
+            height: 10%;
+            background-color: rgb(10, 10, 58);
+            padding: 10px 80px;
+            margin-top: 9px;
+            margin-bottom: 20px;
+            justify-self: center;
+            border-radius: 0 20px;
+            box-shadow: 0 5px 6px 5px coral;
+
+            h2{
+                text-align: center;
+                font-size: x-large;
+                color: white;
+            }
+
+            p{
+                font-weight: bolder;
+                line-height: 25px;
+                color: white;
+            }
+        }
+        #tcy_link:link{
+            color: blue;
+        }
+        #tcy_link:visited{
+            color: red;
+        }
+        #tcy_link:active{
+            color: rgb(167, 142, 2);
+            font-size: medium;
+            font-weight: bolder;
+        }
+        #tcy_link:hover{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="images/jorsuel.jpg" alt="jephthah_image">
+        <h1>Jephthah</h1>
+    </div>
+    <div class="links">
+        <li><a href="about.html">About This Page</a></li>
+        <li><a href="#about me">About Me</a></li>
+    </div>
+    <div class="house">
+        <div class="bio" style="width: 600px;height: auto;background-color: coral;padding: 75px 90px;margin-top: 5px;border-radius: 0 20px;">
+            <p style="font-weight: bolder;line-height: 30px;color: rgb(10, 10, 58);">
+                My name is Ordu Jephthah Samuel, I am 16 years old, given birth to on June 4<sup>th</sup> 2008, I am a Nigerian and I live in Port Harcort, Rivers State
+            </p>
+        </div>
+        
+        <form action="" method="post" target="_blank">
+            <h2 style="text-align: center;"> Contact Form</h2>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required autofocus><br><br>
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required><br><br>
+            <label for="message">Drop A Message: </label>
+            <textarea name="message" id="message" cols="30" rows="3" placeholder="Drop A Review On My Portfolio" required></textarea>
+            <input type="submit" value="Submit Form">
+        </form>
+    </div>
+    <table>
+        <caption>My Hobbies</caption>
+        <thead>
+            <tr>
+                <th scope="col">Hobby</th>
+                <th scope="col">Why I Like It</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Football</td>
+                <td>I love football because it is a game that both helps to keep the body fit and to have a good time</td>
+            </tr>
+            <tr>
+                <td>Crafting</td>
+                <td>I love crafting because it helps me to develop my creative mind and at the same time keep me busy</td>
+            </tr>
+            <tr>
+                <td>Coding</td>
+                <td>I love coding because it helps me to think critically on how to put things in the right place and to solve problems.</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="more" id="about me">
+        <h2>About Me</h2>
+        <p>
+            My name is Ordu Jephthah Samuel, I am from Emohua Local Government, Rivers State, Nigeria. I am from a family of five and I am the last child  out of three children of my parents Mr and Mrs Ordu, I have two sisters and I am the only boy, the names of my sisters are Confidence and Faith.
+            My best colors are white and rose gold, my best hobby is playing football. I want to be a Programmer so I am Learning bit of it from TechyJaunt and I am enjoying and benefiting from what I am learning.
+        </p>
+    </div>
+    <p>To know more about TechyJaunt <a href="https://www.techyjaunt.com" id="tcy_link" target="_blank">click on this link</a></p> 
+</body>
+</html>

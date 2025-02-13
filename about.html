@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About This Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .header{
+            display: flex;
+            background-color: white;
+            padding: 10px;
+            width: 100%;
+            height: fit-content;
+            justify-content: space-evenly;
+            align-items: center;
+            img{
+                width: 170px;
+                height: 190px;
+                border-radius: 50px;
+                box-shadow: 0 5px 5px gray;
+            }
+            
+            h1{
+                font-size: xx-large;
+                font-weight: bolder;
+                color: black;
+            }
+        }
+        .links{
+            width: 100%;
+            height: auto;
+            background-color: rgb(10, 10, 58);
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            list-style-type: none;
+            padding: 10px;
+        }
+        li a{
+            float: left;
+            padding: 10px 17px;
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+        li a:hover{
+            background-color: white;
+            color: rgb(10, 10, 58);
+            border-radius: 40px;
+            box-shadow: 0 5px gray;
+            transition: all 0.3s ease;
+        }
+        li a:active{
+            transform: translateY(5px);
+            transition: all 0.2s ease;
+        }
+        .about_page{
+            width: 50%;
+            background-color: coral;
+            justify-self: center;
+            padding: 60px;
+            margin-top: 50px;
+            box-shadow: 0 5px 8px 5px rgb(10, 10, 58);
+            border-radius: 40px;
+
+            h2{
+                text-align: center;
+                color: rgb(10, 10, 58);
+                font-size: xx-large;
+            }
+
+            p{
+                color: rgb(10, 10, 58);
+                line-height: 25px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="images/jorsuel.jpg" alt="jephthah_image">
+        <h1>Jephthah</h1>
+    </div>
+    <div class="links">
+        <li><a href="portfolio.html">Homepage</a></li>
+    </div>
+    <div class="about_page">
+        <h2>About The Page</h2>
+        <p>This page is about my portfolio assignment given to me by my instructor Mr Emmanuel in TechyJaunt, and it comprises of my profile picture and a litle biography of myself.</p>
+    </div>
+</body>
+</html>
